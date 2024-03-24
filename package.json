@@ -1,0 +1,34 @@
+{
+  "name": "@emmveqz/util-tools-common",
+  "version": "1.0.0",
+  "description": "Util Tools (common)",
+  "author": "Emmanuel Velazquez Lopez",
+  "homepage": "https://github.com/emmveqz/util-tools-common#readme",
+  "license": "ISC",
+  "main": "dist/Utils.js",
+  "types": "dist/Utils.d.ts",
+  "scripts": {
+    "build": "npx tsc --build ./tsconfig.json ",
+    "clean-js": "rm -f ./src/*.js",
+    "prepack": "npm run clean-js   &&   npm run build",
+    "test": "test"
+  },
+  "bugs": {
+    "url": "https://github.com/emmveqz/util-tools-common/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/emmveqz/util-tools-common.git"
+  },
+  "bundledDependencies": [
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "tslint": "^6.1.3",
+    "typescript": "^4.9.4"
+  }
+}
